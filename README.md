@@ -1,7 +1,7 @@
-# SMO-Blender-Level-Importer
+# SMO-Blender-Level-Importer-DAE-Version
 Blender plugin to import Super Mario Odyssey stages into Blender.
 
-Credits: exelix, MonsterDruide1, ChatGPT, Zee
+Credits: exelix, MonsterDruide1, ChatGPT, Zee, Memerglass
 
 Requirements:
 EditorCore with Super Mario Odyssey plugin & Blender 3.6 (Tested on 3.6 and 4.2, DOES NOT WORK ON 4.0+!)
@@ -15,11 +15,11 @@ Instructions:
 
 1. Install OdysseyImportComplete.py from the Releases tab
 
-2. Install the Blender plugin: In blender, go to Edit > Preferences > Install, go through the file system and select OdysseyImportComplete.py, then click Install Addon
+2. Install the Blender plugin: In blender, go to Edit > Preferences > Install, go through the file system and select OdysseyImporterDAE.py, then click Install Addon
 
-3. Setting up the Blender plugin: Press the small arrow on the left of the SMO Level Importer tab in Preferences, a window will drop down. In the OBJ Folder field,
-press on the folder icon on the right of it, then navigate to the OdysseyModels folder in the OdysseyEditor (EditorCore) once viewing the folder with all of the .objs,
-press Accept.
+3. Setting up the Blender plugin: Press the small arrow on the left of the SMO Level Importer tab in Preferences, a window will drop down. In the DAE Folder field,
+press on the folder icon on the right of it, then navigate to the Custom folder once viewing the folder with all of the .daes,
+press Accept. (EditorCore are no longer using to import .obj models the models are broken with no rig.)
 
 ( Optional settings: "Exclude Objects", you can type in the name of objects to exclude them from  being imported, it is recommended that you add Mesh1_Model for an exclusion. 
 "Enable Debug Logging", Enables advanced debugging, ! THIS WILL SLOW THINGS DOWN ! )
@@ -32,10 +32,13 @@ Now, click on the correct .byml, and it will open a small window. You'll see a l
 Save it to somewhere easily accessible for Blender, name it what you'd like.
 
 5. Finally back in Blender, press File > Import > Import SMO Level XML, this will open a file browser window, navigate to the .xml file you saved, click on it, then press
-Import. Blender will be frozen temporarily, time varies on how big the stage is. Rotate the map by 90 degrees on the X axis. It will probably be massive, so scale it to .001.
+Import. Blender will be frozen temporarily, time varies on how big the stage is. It will probably be massive, so scale it to .025.
 Then press View > Frame Selected
 
 Enjoy ripping levels from Super Mario Odyssey.
 
-DAE IMPORTER INSTRUCTIONS:
-1. Not yet, still being worked on.
+Notice:
+
+1. OdysseyEditor (EditorCore) don't use that anymore to select OdysseyModels folder.
+
+2. OBJ are no longer supported. But DAE are supported
