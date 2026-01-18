@@ -43,4 +43,4 @@ Notice:
 
 1. OdysseyEditor (EditorCore) don't use that anymore to select OdysseyModels folder.
 
-2. OBJ are no longer supported. But DAE are supported.
+2. OBJ are no longer supported. But DAE are now supported.
